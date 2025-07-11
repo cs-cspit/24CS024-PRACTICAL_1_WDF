@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subject-wise Attendance</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    section#attendance {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e9ecef;
+    }
+
+    tr td:last-child {
+      font-weight: bold;
+    }
+
+    tr td:nth-child(6):contains("Short Attendance"),
+    tr td:nth-child(6):contains("short attendance") {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    .short-attendance {
+      background-color: #f8d7da !important;
+      color: #721c24 !important;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      background-color: #0070ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #007bff;
+    }
+
+    hr {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="attendance">
+    <h2>Subject-wise Attendance - Semester 3</h2>
+
+    <table border="1">
+      <tr>
+        <th>Subject Code</th>
+        <th>Subject Name</th>
+        <th>Total Classes</th>
+        <th>Attended</th>
+        <th>Percentage</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>CSUC201</td>
+        <td>Data Structure</td>
+        <td>40</td>
+        <td>38</td>
+        <td>95%</td>
+        <td>Present</td>
+      </tr>
+      <tr>
+        <td>ITUC201</td>
+        <td>Computer Networks</td>
+        <td>42</td>
+        <td>35</td>
+        <td>83%</td>
+        <td>Present</td>
+      </tr>
+      <tr class="short-attendance">
+        <td>ITUE203</td>
+        <td>Web Development</td>
+        <td>40</td>
+        <td>28</td>
+        <td>70%</td>
+        <td>Short Attendance</td>
+      </tr>
+      <tr>
+        <td>CEUC203</td>
+        <td>Java Programming</td>
+        <td>38</td>
+        <td>34</td>
+        <td>89%</td>
+        <td>Present</td>
+      </tr>
+      <tr>
+        <td>MSUD201</td>
+        <td>Discrete Mathematics</td>
+        <td>45</td>
+        <td>41</td>
+        <td>91%</td>
+        <td>Present</td>
+      </tr>
+    </table>
+
+    <p><strong>Note:</strong> Minimum 75% attendance required per subject.</p>
+    <hr>
+    <a href="student portal using html and css.html" class="back-button">← Back to Home</a>
+  </section>
+
+</body>
+</html>

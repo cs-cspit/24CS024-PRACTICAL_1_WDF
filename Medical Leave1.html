@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Leave Application</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 30px;
+    }
+
+    section#leave {
+      max-width: 700px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+
+    form label {
+      display: block;
+      font-weight: bold;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="file"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      margin-top: 25px;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #007bff;
+    }
+
+    hr {
+      margin-top: 30px;
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="leave">
+    <h2>Medical Leave Application</h2>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" name="fullname">
+
+      <label>Roll Number:</label>
+      <input type="text" name="roll">
+
+      <label>Reason for Leave:</label>
+      <textarea rows="4" name="reason"></textarea>
+
+      <label>Leave Duration:</label>
+      From: <input type="date" name="from"> &nbsp;&nbsp; 
+      To: <input type="date" name="to">
+
+      <label>Upload Medical Certificate:</label>
+      <input type="file" name="certificate">
+
+      <input type="submit" value="Submit Application">
+    </form>
+    
+    <hr>
+    <a href="student portal using html and css.html" class="back-button">← Back to Home</a>
+  </section>
+
+</body>
+</html>
